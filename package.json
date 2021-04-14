@@ -1,0 +1,24 @@
+{
+  "name": "practice-1",
+  "version": "1.0.0",
+  "description": "node http javescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavel88silber/practice-1.git"
+  },
+  "author": "Pavel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pavel88silber/practice-1/issues"
+  },
+  "homepage": "https://github.com/pavel88silber/practice-1#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
