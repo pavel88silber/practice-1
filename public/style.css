@@ -3,8 +3,6 @@ body {
 }
 
 p {
-  margin: 11;
-  padding: 5;
   color: 'blue';
   background-color: 'yellow';
 }
