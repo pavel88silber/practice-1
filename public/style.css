@@ -2,8 +2,9 @@ body {
     background-color: goldenrod;
 }
 
-.Array {
+.array {
   margin: 11;
   padding: 5;
   color: 'blue';
+  background-color: 'yellow';
 }
