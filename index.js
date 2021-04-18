@@ -10,7 +10,7 @@ addStylesTo(par3, 'yellow', 'red','Эсли объект глобальный е
 
 findById_addText('h2Title', 'Find and Add text')
 
-function addStylesTo (node, color, textColor, text, padd, delay) {
+function addStylesTo (node, color, textColor, text, padd, delay, fontSize = '1rem') {
     setTimeout((delay)=> {
         node.textContent = text
         node.style.background = color
@@ -20,6 +20,12 @@ function addStylesTo (node, color, textColor, text, padd, delay) {
         node.style.margin = '1em'
         node.style.boxShadow = "10px 20px 30px lightblue"
         node.style.textShadow = "0.5px 1px lightgreen"
+
+        // if falsy: '', undefined, null, false, 0
+        if(fontSize) {
+            node.style.fontSize = fontSize
+        }
+
     }, delay)
 }
 
@@ -55,7 +61,46 @@ let countSum = 0
 setInterval(()=> {
     countSum += 1
     count.textContent = countSum
+
 }, 1000)
+
+
+
+// const elemClickParent = document.querySelector('#insideBox')
+// let elemClickChild = elemClickParent.children
+// console.log(elemClickChild);
+
+const insideB = document.getElementById('insideBox')  // HTML ELEMENT
+
+let childrenBox = insideB.children             // HTML Collection
+
+let newElem = document.getElementById('newElem')
+// console.log(newElem);                                                            // Continue HERE !
+if (!newElem) {
+    console.log(newElem);
+}
+// let clickedElem = document.getElementById('newElem')
+
+// console.log(childrenBox[1]);
+
+// if (insideB.hasChildNodes) {
+//     console.log(childrenBox)
+// }
+
+// childrenBox.addEventListener('click', () => {
+//     console.log(childrenBox);
+// })
+
+// elemClickChild.addEventListener('click', () => {
+//     console.log('here');
+// },false)
+// elemClickChild.addEventListener( 'click', () => {
+//     // function playAudio() {
+//     //     elemClick.play()  
+//     // }
+//     console.log(elemClickChild);
+//     // elemClick.style.color = 'yellow'
+// })
 
 
 

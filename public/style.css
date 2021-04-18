@@ -1,6 +1,9 @@
+body {
+  background-color: black;
+}
 .shape {
   width: 400px;
-  height: 600px;
+  height: 650px;
   background: rgb(105, 170, 89);
   text-align: center;
   float: left;
@@ -23,7 +26,7 @@
   float: left;
   text-align: center;
   width: 400px;
-  height: 600px;
+  height: 650px;
   border-radius: 1em;
   margin: 1em;
   
