@@ -1,13 +1,32 @@
 .shape {
   width: 400px;
   height: 600px;
-  background: rgb(201, 247, 190);
+  background: rgb(105, 170, 89);
   text-align: center;
   float: left;
   margin: 1em;
+  border-radius: 1em;
+
+  border: 1px solid rgb(242, 226, 226);
+  animation: mymove 7s;
 }
-.shapePlus {
+
+@keyframes mymove {
+  from {background-color: red;}
+  to {background-color: yellow;}
+  10% {border: 3px solid rgb(232, 222, 222);}
+}
+
+#shapePlus {
   background-color: goldenrod;
+  border-color: brown;
+  float: left;
+  text-align: center;
+  width: 400px;
+  height: 600px;
+  border-radius: 1em;
+  margin: 1em;
+  
 }
 
 .shape2 {
@@ -15,5 +34,33 @@
   height: 50px;
   background: rgb(83, 224, 47);
   text-align: center;
+  border-radius: 1em;
 }
 
+#h2Title {
+  border-color: brown;
+  box-shadow: "10px 20px 30px lightblue";
+  text-shadow: "0.5px 1px lightgreen";
+}
+
+#newElem {
+  width: 40px;
+  height: 40px;
+  background: rgb(243, 141, 223);
+  border: 1px solid rgb(37, 37, 36);
+  text-align: center;
+  float: left;
+  margin: 0.1em;
+  border-radius: 0.1em;
+}
+
+#deleteElemBtn {
+  background-color: rgb(233, 134, 153);
+}
+#newElemBtn {
+  background-color: rgb(116, 248, 89);
+}
+.btn {
+  margin: 1em;
+  border-radius: 0.5em;
+}
