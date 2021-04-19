@@ -46,6 +46,7 @@ newElemBtn.onclick = () => {
     let newItem = document.createElement('p')
     newItem.setAttribute("id", 'elemId' + (++elemCount))
     newItem.setAttribute("class", 'newElem')
+    newItem.setAttribute("onClick", 'reply_click(this.id)')
     shape2.appendChild(newItem)
 }
 
@@ -56,7 +57,7 @@ deleteElemBtn.onclick = () => {
     shape2.removeChild(shape2.lastChild)
 }
 
-// Counter
+// Counter (1 SECOND)
 const count = document.querySelector('#count')
 let countSum = 0
 setInterval(()=> {
@@ -66,47 +67,23 @@ setInterval(()=> {
 }, 1000)
 
 
-
-// const elemClickParent = document.querySelector('#insideBox')
-// let elemClickChild = elemClickParent.children
-// console.log(elemClickChild);
-
 const shapePlus = document.getElementById('shapePlus')  // HTML ELEMENT
 console.log('shapePlus => ' + shapePlus)
 console.log('shapePlus.lastChild => ' + shapePlus.lastChild)
 
 
+// ON CLICK CHANGE COLOR OF ELEMENT
+let clicked = ''
+function reply_click (clickedId) {
+    clicked = document.getElementById(clickedId)
+    if(clicked.style.background ==  'green') {
+        clicked.style.background = 'yellow'
+    } else {
+        clicked.style.background = 'green'
+    }
 
+}
 
-// let childrenBox = insideB.children             // HTML Collection
-
-// let newElem = document.getElementById('newElem')
-// // console.log(newElem);                                                            // Continue HERE !
-// if (!newElem) {
-//     console.log(newElem);
-// }
-// let clickedElem = document.getElementById('newElem')
-
-// console.log(childrenBox[1]);
-
-// if (insideB.hasChildNodes) {
-//     console.log(childrenBox)
-// }
-
-// childrenBox.addEventListener('click', () => {
-//     console.log(childrenBox);
-// })
-
-// elemClickChild.addEventListener('click', () => {
-//     console.log('here');
-// },false)
-// elemClickChild.addEventListener( 'click', () => {
-//     // function playAudio() {
-//     //     elemClick.play()  
-//     // }
-//     console.log(elemClickChild);
-//     // elemClick.style.color = 'yellow'
-// })
 
 
 
