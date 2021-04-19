@@ -10,12 +10,12 @@ addStylesTo(par3, 'yellow', 'red','Эсли объект глобальный е
 
 findById_addText('h2Title', 'Find and Add text')
 
-function addStylesTo (node, color, textColor, text, padd, delay, fontSize = '1rem') {
-    setTimeout((delay)=> {
+function addStylesTo (node, color, textColor, text, padding, delay, fontSize = '1rem') {
+    setTimeout(()=> {
         node.textContent = text
         node.style.background = color
         node.style.color = textColor
-        node.style.padding = padd
+        node.style.padding = padding
         node.style.borderRadius = '1em'
         node.style.margin = '1em'
         node.style.boxShadow = "10px 20px 30px lightblue"
@@ -40,11 +40,12 @@ function findById_addText (newId, text) {
 
 // Adding new element by clicking the button in shape2
 const newElemBtn = document.querySelector('#newElemBtn')
+let elemCount = 0
 newElemBtn.onclick = () => {
     const shape2 = document.getElementById('insideBox')
     let newItem = document.createElement('p')
-    // newItem.textContent = 'Banana'
-    newItem.setAttribute("id", "newElem")
+    newItem.setAttribute("id", 'elemId' + (++elemCount))
+    newItem.setAttribute("class", 'newElem')
     shape2.appendChild(newItem)
 }
 
@@ -70,15 +71,20 @@ setInterval(()=> {
 // let elemClickChild = elemClickParent.children
 // console.log(elemClickChild);
 
-const insideB = document.getElementById('insideBox')  // HTML ELEMENT
+const shapePlus = document.getElementById('shapePlus')  // HTML ELEMENT
+console.log('shapePlus => ' + shapePlus)
+console.log('shapePlus.lastChild => ' + shapePlus.lastChild)
 
-let childrenBox = insideB.children             // HTML Collection
 
-let newElem = document.getElementById('newElem')
-// console.log(newElem);                                                            // Continue HERE !
-if (!newElem) {
-    console.log(newElem);
-}
+
+
+// let childrenBox = insideB.children             // HTML Collection
+
+// let newElem = document.getElementById('newElem')
+// // console.log(newElem);                                                            // Continue HERE !
+// if (!newElem) {
+//     console.log(newElem);
+// }
 // let clickedElem = document.getElementById('newElem')
 
 // console.log(childrenBox[1]);
