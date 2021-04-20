@@ -148,5 +148,40 @@ body {
 }
 
 #clickImg {
-    border-radius: 0rem;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    text-align: center;
+
+}
+
+.botbDiv {
+  margin: 2rem;
+  border: 1px solid white;
+  width: 550px;
+  border-radius: 2rem;
+  float: left;
+  text-align: center;
+  width: 500px;
+  height: 550px;
+}
+
+h4 {
+  font-size: 2rem;
+  color: blanchedalmond;
+  text-shadow: 2rem grey;
+  text-align: center;
+  box-shadow: 10px 20px 30px 20px rgb(114, 47, 103);
+  text-shadow: 0.5px 1px rgb(140, 196, 99);
+  padding: 2rem;
+  border-radius: 7rem;
+}
+
+.txtP {
+  font-size: 1rem;
+  color: rgb(209, 154, 72);
+  text-shadow: 2rem grey;
+  text-align: left;
+  text-shadow: 0.5px 1px rgb(140, 196, 99);
+  padding: 0.3rem;
+  border-radius: 1rem;
 }
