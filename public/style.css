@@ -3,7 +3,7 @@ body {
 }
 .shape {
   width: 400px;
-  height: 650px;
+  height: 600px;
   background: rgb(105, 170, 89);
   text-align: center;
   float: left;
@@ -145,4 +145,8 @@ body {
   border-radius: 1em;
   margin: 1em;
 
+}
+
+#clickImg {
+    border-radius: 0rem;
 }

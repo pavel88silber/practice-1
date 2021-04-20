@@ -92,4 +92,10 @@ hideBtn.onclick = () => {
     }
 }
 
+// ----------------------------------------------  CLICK IMAGE ----------------------------------------------
+
+const click = document.querySelector('#clickImg')
+click.addEventListener('click', (event) => {
+    console.log(' X = ' + event.x + '  Y = ' + event.y)
+})
 
