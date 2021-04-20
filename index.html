@@ -8,10 +8,7 @@
     <title>Practice 1</title>
 </head>
 <body id="mainBody">
-    <!-- <audio src="/public/sounds/click.wav"></audio> -->
-
     <div class="shape">
-
         <h2 id="h2Title"></h2>
 
         <div id="par"></div>
@@ -20,20 +17,39 @@
         <p id="par2"><strong></strong></p>
         <p id="par3"></p>
     </div>
+    
 
+    <div id="mainShape">
+            <h3 id="count"></h3>
+            <button class="btn" id="hideDivHeart">Hide/Unhide this block</button>
+            <div id="shapePlus">
+                <div class="divHeart">
+                    <p>Heart pulse with CSS and SVG</p>
+                    <svg class="heart" viewBox="0 0 32 29.6">
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                            c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                    </svg>
+                </div>
 
-    <div id="shapePlus">
+                <div class="divHeart">
+                    <p>ONLY CSS with setTimeInterval()</p>
+                    <span id="myHeart"></span>
+                </div>
 
-        <h3 id="count"></h3>
-        <div id="nameInput">
-            <input type="text">
-            <button>Enter your name</button>
-        </div>
-        
-        <button id="newElemBtn" class="btn">ADD NEW ELEMENT</button>
-        <button id="deleteElemBtn" class="btn">REMOVE ELEMENT</button>
-        <div id="insideBox"></div>
+                <div id="nameInput">
+                    <form action="/action_page.php">
+                        <label for="phone">Enter your name</label><br>
+                        <!-- <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br> -->
+                        <input type="text" id="userName" name="user" placeholder="Kanguru" pattern="[A-Z]{1}-[1-9]{....}"><br>
+                        <!-- <small>Format: Kanguru</small><br> -->
+                        <input type="submit">
+                    </form>
+                </div>
 
+                <button id="newElemBtn" class="btn">ADD NEW ELEMENT</button>
+                <button id="deleteElemBtn" class="btn">REMOVE ELEMENT</button>
+                <div id="insideBox"></div>
+            </div>
         
     </div>
 

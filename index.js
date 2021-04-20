@@ -1,6 +1,5 @@
 const heading = document.getElementById('header')
 const par = document.getElementById('par')
-// const shape2 = document.querySelector('.shape2')
 
 addStylesTo(par, 'red', 'white', 'setTimeout()', '2rem', 200)
 addStylesTo(heading, 'black', 'red','Practice 1', '2rem', 600)
@@ -21,11 +20,10 @@ function addStylesTo (node, color, textColor, text, padding, delay, fontSize = '
         node.style.boxShadow = "10px 20px 30px lightblue"
         node.style.textShadow = "0.5px 1px lightgreen"
 
-        // if falsy: '', undefined, null, false, 0
+        // IF FALSY: '', undefined, null, false, 0
         if(fontSize) {
             node.style.fontSize = fontSize
         }
-
     }, delay)
 }
 
@@ -37,8 +35,7 @@ function findById_addText (newId, text) {
 }
 
 
-
-// Adding new element by clicking the button in shape2
+// ====================ADDING new element by clicking the button in shape2 =====================
 const newElemBtn = document.querySelector('#newElemBtn')
 let elemCount = 0
 newElemBtn.onclick = () => {
@@ -50,11 +47,12 @@ newElemBtn.onclick = () => {
     shape2.appendChild(newItem)
 }
 
-// Deleting new element by clicking the button in shape2
+// DELETE new element by clicking the button in shape2
 const deleteElemBtn = document.querySelector('#deleteElemBtn')
 deleteElemBtn.onclick = () => {
     const shape2 = document.getElementById('insideBox')
     shape2.removeChild(shape2.lastChild)
+    console.log(shape2.lastChild);
 }
 
 // Counter (1 SECOND)
@@ -63,7 +61,6 @@ let countSum = 0
 setInterval(()=> {
     countSum += 1
     count.textContent = countSum
-
 }, 1000)
 
 
@@ -81,9 +78,18 @@ function reply_click (clickedId) {
     } else {
         clicked.style.background = 'green'
     }
-
 }
 
+// =================================   Hide/Unhidden shaPlus Block   ===========================================
 
+const hideBtn = document.getElementById('hideDivHeart')
+let block = document.getElementById('shapePlus')
+hideBtn.onclick = () => {
+    if (block.style.display === 'block') {
+        block.style.display = 'none'
+    } else {
+        block.style.display = 'block'
+    }
+}
 
 
