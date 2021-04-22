@@ -65,8 +65,8 @@ setInterval(()=> {
 
 
 const shapePlus = document.getElementById('shapePlus')  // HTML ELEMENT
-console.log('shapePlus => ' + shapePlus)
-console.log('shapePlus.lastChild => ' + shapePlus.lastChild)
+// console.log('shapePlus => ' + shapePlus)
+// console.log('shapePlus.lastChild => ' + shapePlus.lastChild)
 
 
 // ON CLICK CHANGE COLOR OF ELEMENT
