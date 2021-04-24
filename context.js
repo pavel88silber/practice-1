@@ -18,6 +18,7 @@ const person = {
 }
 
 console.log(person.info());
+
 console.log('--------------------------- Looger -------------------------------------')
 
 
@@ -31,10 +32,21 @@ console.log('--------------------------- Looger --------------------------------
 
 // Объект logger2 с некоторыми методами
 const logger2 = {
+    num: 22,
     // метод keys который будет выводить в консоль ключи объекта теперь с this
-    keys: () => {
-        console.log(this)
+    keys: (obj) => {
+        console.log('Object Keys  ==>  ' + Object.keys(obj))
     }
 }
+console.log(logger2.keys(person));
+
 // С помощью this можно выводить данные любого объекта 
-console.log(logger2.keys(person)) 
+// console.log(person)
+console.log('');
+console.log('');
+console.log('');
+console.log('--------------------------Bind()------------------------------------')
+console.log('привязывает определенный кsонтекст который мы сами выберем')
+console.log('-----метод Bind() return new function ------------------------------------')
+const bound = logger2.keys.bind(person)
+bound(person)
